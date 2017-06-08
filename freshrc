@@ -11,8 +11,8 @@ fresh config/\* --file
 
 # fish: the friendly interactive shell, for humans
 fresh-options --file=~/.config/fish/config.fish --marker
-    fresh config/fish/config.fish
-    fresh config/fish/aliases.fish
+    fresh fish/config.fish
+    fresh fish/aliases.fish
     #fresh config/fish/colors.fish
 fresh-options
 
@@ -21,7 +21,7 @@ fresh-options
 # done
 
 # fisherman: package manager for fish
-fresh config/fish/fishfile --file=~/.config/fish/fishfile
+fresh fish/fishfile --file=~/.config/fish/fishfile
 fresh fisherman/fisherman fisher.fish --file=~/.config/fish/functions/fisher.fish
 
 fresh_after_build () {
