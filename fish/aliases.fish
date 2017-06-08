@@ -9,6 +9,13 @@ end
 
 alias l 'ls -lah'
 
+
+# Rails
+alias rc 'rails console'
+alias rt 'rails test'
+
+
+# direnv
 function da -d "Allow or disallow .envrc after printing it."
   echo "------------------------------------------------"
   cat .envrc
@@ -16,4 +23,15 @@ function da -d "Allow or disallow .envrc after printing it."
   echo "To allow, hit Return."
   read answer
   direnv allow
+end
+
+# Invoker
+alias s 'invoker start invoker.local.ini'
+
+function s
+  if count $argv > /dev/null
+    eval "invoker start invoker.$argv.ini"
+  else
+    invoker start invoker.ini
+  end
 end
