@@ -1,7 +1,30 @@
+## Fresh setup
+
 # handles updating fresh
 fresh freshshell/fresh bin/fresh --bin
 
-# links the config/ackrc file to ~/.ackrc
-fresh twe4ked/dotfiles config/ackrc --file
+# dircolors: colorized ls
+fresh seebi/dircolors-solarized dircolors.ansi-dark --file=~/.dircolorsrc
 
+## Config
 fresh config/\* --file
+
+# fish: the friendly interactive shell, for humans
+fresh-options --file=~/.config/fish/config.fish --marker
+    fresh config/fish/config.fish
+    fresh config/fish/aliases.fish
+    #fresh config/fish/colors.fish
+fresh-options
+
+# for function in ~/.dotfiles/config/fish/functions/*.fish; do
+#     fresh config/fish/functions/"$(basename "$function")" --file=~/.config/fish/functions/"$(basename "$function")"
+# done
+
+# fisherman: package manager for fish
+fresh config/fish/fishfile --file=~/.config/fish/fishfile
+fresh fisherman/fisherman fisher.fish --file=~/.config/fish/functions/fisher.fish
+
+fresh_after_build () {
+    chmod +w ~/.fresh/build/config-fish-fishfile
+}
+
