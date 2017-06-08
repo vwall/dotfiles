@@ -1,0 +1,28 @@
+{
+  "bootstrapped": true,
+  "in_process_packages":
+  [
+  ],
+  "installed_packages":
+  [
+    "A File Icon",
+    "AdvancedNewFile",
+    "AlignTab",
+    "All Autocomplete",
+    "Better CoffeeScript",
+    "Boxy Theme",
+    "fish-shell",
+    "Handlebars",
+    "Hayaku - tools for writing CSS faster",
+    "Package Control",
+    "Pretty JSON",
+    "Pug",
+    "Ruby Slim",
+    "Sass",
+    "SideBarEnhancements",
+    "Solarized Color Scheme",
+    "Theme - Flatland",
+    "VAlign",
+    "Vue Syntax Highlight"
+  ]
+}

@@ -9,6 +9,9 @@ fresh seebi/dircolors-solarized dircolors.ansi-dark --file=~/.dircolorsrc
 ## Config
 fresh config/\* --file
 
+## Sublime Text
+fresh sublimetext --file=~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/
+
 # fish: the friendly interactive shell, for humans
 fresh-options --file=~/.config/fish/config.fish --marker
     fresh fish/config.fish
@@ -27,4 +30,3 @@ fresh fisherman/fisherman fisher.fish --file=~/.config/fish/functions/fisher.fis
 fresh_after_build () {
     chmod +w ~/.fresh/build/config-fish-fishfile
 }
-

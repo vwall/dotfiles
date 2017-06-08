@@ -1,0 +1,32 @@
+{
+  "bold_folder_labels": true,
+  "color_scheme": "Packages/Boxy Theme/schemes/Boxy Ocean.tmTheme",
+  "ensure_newline_at_eof_on_save": true,
+  "folder_exclude_patterns":
+  [
+    ".svn",
+    ".git",
+    ".hg",
+    "CVS",
+    "log",
+    "tmp",
+    ".vscode"
+  ],
+  "font_face": "Inconsolata-g",
+  "font_size": 16,
+  "hayaku_use_default_cycling_keymaps": false,
+  "highlight_line": true,
+  "ignored_packages":
+  [
+    "Vintage"
+  ],
+  "index_files": true,
+  "rulers":
+  [
+    80
+  ],
+  "tab_size": 2,
+  "theme": "Boxy Ocean.sublime-theme",
+  "translate_tabs_to_spaces": true,
+  "trim_trailing_white_space_on_save": true
+}
