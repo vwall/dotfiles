@@ -12,7 +12,7 @@ alias l 'ls -lah'
 
 # Rails
 alias rc 'rails console'
-alias rm 'rails db:migrate'
+alias rdm 'rails db:migrate'
 alias rt 'rails test'
 
 
