@@ -12,11 +12,17 @@ fresh config/\* --file
 ## Sublime Text
 fresh sublimetext --file=~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/
 
+## Atom
+fresh atom/config.cson --file=~/.atom/config.cson
+fresh atom/keymap.cson --file=~/.atom/keymap.cson
+fresh atom/projects.cson --file=~/.atom/projects.cson
+fresh atom/styles.less --file=~/.atom/styles.less
+fresh atom/snippets.cson --file=~/.atom/snippets.cson
+
 # fish: the friendly interactive shell, for humans
 fresh-options --file=~/.config/fish/config.fish --marker
     fresh fish/config.fish
     fresh fish/aliases.fish
-    #fresh config/fish/colors.fish
 fresh-options
 
 # for function in ~/.dotfiles/config/fish/functions/*.fish; do
@@ -29,4 +35,9 @@ fresh fisherman/fisherman fisher.fish --file=~/.config/fish/functions/fisher.fis
 
 fresh_after_build () {
     chmod +w ~/.fresh/build/config-fish-fishfile
+    chmod u=rw,g+r,o+r ~/.fresh/build/atom-config.cson
+    chmod u=rw,g+r,o+r ~/.fresh/build/atom-keymap.cson
+    chmod u=rw,g+r,o+r ~/.fresh/build/atom-projects.cson
+    chmod u=rw,g+r,o+r ~/.fresh/build/atom-styles.less
+    chmod u=rw,g+r,o+r ~/.fresh/build/atom-snippets.cson
 }

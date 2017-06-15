@@ -1,0 +1,29 @@
+"*":
+  "atom-material-ui":
+    colors: {}
+    tabs: {}
+    treeView:
+      compactList: true
+  core:
+    disabledPackages: [
+      "language-vue-component"
+      "language-pug-jade"
+    ]
+    telemetryConsent: "no"
+    themes: [
+      "neutron-ui"
+      "oceanic-next"
+    ]
+  editor:
+    fontFamily: "Inconsolata-g"
+    fontSize: 16
+    showIndentGuide: true
+  "exception-reporting":
+    userId: "8961735e-13dc-a715-1ea5-1b04b5597587"
+  "file-icons": {}
+  "tree-view":
+    hideIgnoredNames: true
+  "vim-mode-plus":
+    groupChangesWhenLeavingInsertMode: false
+  welcome:
+    showOnStartup: false
