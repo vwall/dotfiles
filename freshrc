@@ -12,6 +12,9 @@ fresh config/\* --file
 ## Sublime Text
 fresh sublimetext --file=~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/
 
+## Bundler
+fresh bundler/config --file=~/.bundle/config
+
 ## Atom
 fresh atom/config.cson --file=~/.atom/config.cson
 fresh atom/keymap.cson --file=~/.atom/keymap.cson

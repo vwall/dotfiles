@@ -13,8 +13,10 @@ alias l 'ls -lah'
 alias rc 'rails console'
 alias rdm 'rails db:migrate'
 alias rt 'rails test'
+alias rr 'rails routes'
 alias bi 'bundle install'
 alias bo 'bundle outdated'
+alias bu 'bundle update'
 
 
 # direnv
