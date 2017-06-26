@@ -1,9 +1,13 @@
 "*":
   "atom-material-ui":
     colors: {}
-    tabs: {}
+    tabs:
+      compactTabs: true
+      tintedTabBar: true
     treeView:
       compactList: true
+    ui:
+      panelContrast: true
   core:
     disabledPackages: [
       "language-vue-component"
@@ -11,7 +15,7 @@
     ]
     telemetryConsent: "no"
     themes: [
-      "neutron-ui"
+      "atom-dark-ui"
       "oceanic-next"
     ]
   editor:
@@ -24,6 +28,8 @@
   "tree-view":
     hideIgnoredNames: true
   "vim-mode-plus":
+    clearMultipleCursorsOnEscapeInsertMode: true
+    debug: true
     groupChangesWhenLeavingInsertMode: false
   welcome:
     showOnStartup: false
