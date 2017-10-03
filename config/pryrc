@@ -204,5 +204,3 @@ Pry.config.commands.command "lastcopy", "Last result copy to clipboard" do
     pbcopy _pry_.last_result
   end
 end
-
-
