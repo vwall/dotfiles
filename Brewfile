@@ -1,2 +1,24 @@
-install chruby
-instlal chruby-fish
+brew 'direnv'
+brew 'elasticsearch'
+brew 'fish'
+brew 'git'
+brew 'heroku'
+brew 'imagemagick'
+brew 'node'
+brew 'phantomjs'
+brew 'postgresql'
+brew 'chruby'
+brew 'chruby-fish'
+brew 'ruby-install'
+brew 'redis'
+brew 'yarn'
+
+tap 'caskroom/cask'
+tap 'caskroom/homebrew-versions'
+
+cask 'github-desktop'
+cask 'google-chrome'
+cask 'postico'
+cask 'screenhero'
+cask 'sketch'
+cask 'slack'
