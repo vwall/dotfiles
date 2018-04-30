@@ -1,2 +1,2 @@
 BUNDLE_BUILD__PG: "--with-pg-config=/Applications/Postgres.app/Contents/Versions/10/bin"
-BUNDLE_JOBS: "8"
+BUNDLE_JOBS: "16"
