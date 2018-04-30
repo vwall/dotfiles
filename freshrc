@@ -22,6 +22,11 @@ fresh atom/projects.cson --file=~/.atom/projects.cson
 fresh atom/styles.less --file=~/.atom/styles.less
 fresh atom/snippets.cson --file=~/.atom/snippets.cson
 
+## VS Code editor
+fresh vscode/settings.json --file=~/Library/Application\ Support/Code/User/settings.json
+fresh vscode/keybindings.json --file=~/Library/Application\ Support/Code/User/keybindings.json
+fresh vscode/snippets --file=~/Library/Application\ Support/Code/User/snippets/
+
 # fish: the friendly interactive shell, for humans
 fresh-options --file=~/.config/fish/config.fish --marker
     fresh fish/config.fish
@@ -43,4 +48,6 @@ fresh_after_build () {
     chmod u=rw,g+r,o+r ~/.fresh/build/atom-projects.cson
     chmod u=rw,g+r,o+r ~/.fresh/build/atom-styles.less
     chmod u=rw,g+r,o+r ~/.fresh/build/atom-snippets.cson
+    chmod u=rw,g+r,o+r ~/.fresh/build/Library-Application-Support-Code-User-settings.json
+    chmod u=rw,g+r,o+r ~/.fresh/build/Library-Application-Support-Code-User-keybindings.json
 }

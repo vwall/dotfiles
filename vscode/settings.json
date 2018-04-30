@@ -1,0 +1,22 @@
+{
+  "editor.fontFamily": "'Inconsolata-g', Menlo, Monaco, 'Courier New', monospace",
+  "editor.minimap.enabled": false,
+  "editor.tabSize": 2,
+  "editor.fontSize": 16,
+  "editor.rulers": [80, 100],
+  "files.associations": {
+    "freshrc": "fish",
+    "pryrc": "ruby"
+  },
+  "files.trimFinalNewlines": true,
+  "files.trimTrailingWhitespace": true,
+  "vim.insertModeKeyBindings": [
+    {
+      "before": [ "j", "j"],
+      "after": ["<Esc>"]
+    }
+  ],
+  "workbench.fontAliasing": "antialiased",
+  "workbench.colorTheme": "Atom One Dark",
+  "workbench.iconTheme": "material-icon-theme",
+}
