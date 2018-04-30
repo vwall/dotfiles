@@ -4,6 +4,7 @@
   "editor.tabSize": 2,
   "editor.fontSize": 16,
   "editor.rulers": [80, 100],
+  "editor.scrollBeyondLastLine": false,
   "files.associations": {
     "freshrc": "fish",
     "pryrc": "ruby"
