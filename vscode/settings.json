@@ -9,6 +9,7 @@
     "freshrc": "fish",
     "pryrc": "ruby"
   },
+  "files.insertFinalNewline": true,
   "files.trimFinalNewlines": true,
   "files.trimTrailingWhitespace": true,
   "vim.insertModeKeyBindings": [
