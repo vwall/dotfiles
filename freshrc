@@ -9,23 +9,16 @@ fresh seebi/dircolors-solarized dircolors.ansi-dark --file=~/.dircolorsrc
 ## Config
 fresh config/\* --file
 
-## Sublime Text
-fresh sublimetext --file=~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/
-
 ## Bundler
 fresh bundler/config --file=~/.bundle/config
 
-## Atom
-fresh atom/config.cson --file=~/.atom/config.cson
-fresh atom/keymap.cson --file=~/.atom/keymap.cson
-fresh atom/projects.cson --file=~/.atom/projects.cson
-fresh atom/styles.less --file=~/.atom/styles.less
+ln -sf  $HOME/.dotfiles/atom/styles.less $HOME/.atom/styles.less
 fresh atom/snippets.cson --file=~/.atom/snippets.cson
 
 ## VS Code editor
-fresh vscode/settings.json --file=~/Library/Application\ Support/Code/User/settings.json
-fresh vscode/keybindings.json --file=~/Library/Application\ Support/Code/User/keybindings.json
-#fresh vscode/snippets --file=~/Library/Application\ Support/Code/User/snippets/
+ln -sf  $HOME/.dotfiles/vscode/settings.json $HOME/Library/Application\ Support/Code/User/settings.json
+ln -sf  $HOME/.dotfiles/vscode/keybindings.json $HOME/Library/Application\ Support/Code/User/keybindings.json
+ln -sf  $HOME/.dotfiles/vscode/snippets/MyGlobal.code-snippets $HOME/Library/Application\ Support/Code/User/snippets/MyGlobal.code-snippets
 
 # fish: the friendly interactive shell, for humans
 fresh-options --file=~/.config/fish/config.fish --marker
@@ -42,12 +35,5 @@ fresh fish/fishfile --file=~/.config/fish/fishfile
 fresh fisherman/fisherman fisher.fish --file=~/.config/fish/functions/fisher.fish
 
 fresh_after_build () {
-    chmod +w ~/.fresh/build/config-fish-fishfile
-    chmod u=rw,g+r,o+r ~/.fresh/build/atom-config.cson
-    chmod u=rw,g+r,o+r ~/.fresh/build/atom-keymap.cson
-    chmod u=rw,g+r,o+r ~/.fresh/build/atom-projects.cson
-    chmod u=rw,g+r,o+r ~/.fresh/build/atom-styles.less
-    chmod u=rw,g+r,o+r ~/.fresh/build/atom-snippets.cson
-    chmod u=rw,g+r,o+r ~/.fresh/build/Library-Application-Support-Code-User-settings.json
-    chmod u=rw,g+r,o+r ~/.fresh/build/Library-Application-Support-Code-User-keybindings.json
+  chmod +w ~/.fresh/build/config-fish-fishfile
 }
