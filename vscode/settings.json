@@ -14,7 +14,7 @@
   "files.trimTrailingWhitespace": true,
   "vim.insertModeKeyBindings": [
     {
-      "before": [ "j", "j"],
+      "before": [ "j", "k"],
       "after": ["<Esc>"]
     }
   ],
