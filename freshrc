@@ -25,7 +25,7 @@ fresh atom/snippets.cson --file=~/.atom/snippets.cson
 ## VS Code editor
 fresh vscode/settings.json --file=~/Library/Application\ Support/Code/User/settings.json
 fresh vscode/keybindings.json --file=~/Library/Application\ Support/Code/User/keybindings.json
-fresh vscode/snippets --file=~/Library/Application\ Support/Code/User/snippets/
+#fresh vscode/snippets --file=~/Library/Application\ Support/Code/User/snippets/
 
 # fish: the friendly interactive shell, for humans
 fresh-options --file=~/.config/fish/config.fish --marker
