@@ -12,9 +12,6 @@ fresh config/\* --file
 ## Bundler
 fresh bundler/config --file=~/.bundle/config
 
-ln -sf  $HOME/.dotfiles/atom/styles.less $HOME/.atom/styles.less
-fresh atom/snippets.cson --file=~/.atom/snippets.cson
-
 ## VS Code editor
 ln -sf  $HOME/.dotfiles/vscode/settings.json $HOME/Library/Application\ Support/Code/User/settings.json
 ln -sf  $HOME/.dotfiles/vscode/keybindings.json $HOME/Library/Application\ Support/Code/User/keybindings.json

@@ -21,4 +21,5 @@
   "workbench.fontAliasing": "antialiased",
   "workbench.colorTheme": "Atom One Dark",
   "workbench.iconTheme": "material-icon-theme",
+  "extensions.autoUpdate": false,
 }
