@@ -107,7 +107,7 @@
   ui = auto
 [core]
   excludesfile = ~/.gitignore-global
-  editor = subl -n -w
+  editor = code --wait
 [branch]
   autosetupmerge = true
 [push]
