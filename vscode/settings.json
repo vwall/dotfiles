@@ -24,4 +24,5 @@
   "workbench.iconTheme": "material-icon-theme",
   "extensions.autoUpdate": false,
   "workbench.editor.enablePreviewFromQuickOpen": false,
+  "breadcrumbs.enabled": true,
 }
