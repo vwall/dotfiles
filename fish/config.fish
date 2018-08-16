@@ -14,4 +14,7 @@ end
 source /usr/local/share/chruby/chruby.fish
 source /usr/local/share/chruby/auto.fish
 
+#ASDF
+source /usr/local/opt/asdf/asdf.fish
+
 eval (direnv hook fish)
