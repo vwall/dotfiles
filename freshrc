@@ -12,6 +12,11 @@ fresh config/\* --file
 ## Bundler
 fresh bundler/config --file=~/.bundle/config
 
+## ASDF
+fresh asdf/asdfrc --file=~/.asdfrc
+fresh asdf/tool-versions --file=~/.tool-versions
+fresh asdf/default-npm-packages --file=~/.default-npm-packages
+
 ## VS Code editor
 ln -sf  $HOME/.dotfiles/vscode/settings.json $HOME/Library/Application\ Support/Code/User/settings.json
 ln -sf  $HOME/.dotfiles/vscode/keybindings.json $HOME/Library/Application\ Support/Code/User/keybindings.json
