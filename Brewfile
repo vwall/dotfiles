@@ -10,6 +10,7 @@ brew 'chruby-fish'
 brew 'ruby-install'
 brew 'redis'
 brew 'yarn'
+brew 'mkcert'
 
 tap 'caskroom/cask'
 tap 'caskroom/homebrew-versions'
