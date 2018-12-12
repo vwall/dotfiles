@@ -108,6 +108,7 @@
 [core]
   excludesfile = ~/.gitignore-global
   editor = code --wait
+  ignorecase = false
 [branch]
   autosetupmerge = true
 [push]

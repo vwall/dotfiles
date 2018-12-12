@@ -9,6 +9,8 @@ end
 
 alias l 'ls -lah'
 
+alias s 'invoker start invoker.ini --certificate="/Users/vincentwaller/work/input/_wildcard.input.dev+4.pem" --private_key="/Users/vincentwaller/work/input/_wildcard.input.dev+4-key.pem"'
+
 # Rails
 alias rc 'rails console'
 alias rdm 'rails db:migrate'
@@ -29,8 +31,17 @@ function da -d "Allow or disallow .envrc after printing it."
   direnv allow
 end
 
+function tab
+	set -l ascmd "osascript -e 'tell application \"Terminal\" to activate' -e 'tell application \"System Events\" to tell process \"Terminal\" to keystroke \"t\" using command down'"
+	for arg in $argv
+		set ascmd "$ascmd -e 'tell application \"Terminal\" to do script \"$arg\" in selected tab of the front window'"
+	end
+	set -l ascmd "$ascmd;"
+	eval $ascmd
+end
+
 # Invoker
-alias s 'invoker start invoker.local.ini'
+# alias s 'invoker start invoker.local.ini'
 
 function s
   if count $argv > /dev/null

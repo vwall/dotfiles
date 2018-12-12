@@ -22,4 +22,12 @@
 		],
 		"description": "Log output to console"
 	},
+	"Vue Mounted": {
+		"prefix": "mount",
+		"scope": "javascript,typescript,vue",
+		"body": [
+			"mounted($1) {$0},"
+		],
+		"description": "Vue moutned action"
+	},
 }
