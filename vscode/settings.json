@@ -24,5 +24,7 @@
   "workbench.iconTheme": "material-icon-theme",
   "workbench.editor.enablePreviewFromQuickOpen": false,
   "breadcrumbs.enabled": true,
-  "editor.formatOnPaste": true
+  "editor.formatOnPaste": true,
+  "solargraph.commandPath": "/Users/vincentwaller/.gem/ruby/2.5.1/bin/solargraph",
+  "editor.formatOnSave": true
 }

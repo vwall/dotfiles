@@ -1,6 +1,6 @@
 set --global --export PATH \
   $HOME/bin \
-  /usr/local/{,s}bin \
+  /usr/local/bin \
   /usr/{,s}bin \
   /{,s}bin
 
