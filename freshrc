@@ -9,6 +9,13 @@ fresh seebi/dircolors-solarized dircolors.ansi-dark --file=~/.dircolorsrc
 ## Config
 fresh config/\* --file
 
+## Kitty Terminal
+fresh kitty/kitty.conf --file=~/.config/kitty/kitty.conf
+fresh kitty/sessions/project.conf --file=~/.config/kitty/project.conf
+
+## StarShip Prompt
+fresh starship/starship.toml --file=~/.config/starship.toml
+
 ## Bundler
 fresh bundler/config --file=~/.bundle/config
 

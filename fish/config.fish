@@ -17,4 +17,6 @@ source /usr/local/share/chruby/auto.fish
 #ASDF
 source ~/.asdf/asdf.fish
 
+starship init fish | source
+
 eval (direnv hook fish)

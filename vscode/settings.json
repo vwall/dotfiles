@@ -1,5 +1,4 @@
 {
-  "editor.fontFamily": "'Inconsolata-g', Menlo, Monaco, 'Courier New', monospace",
   "editor.minimap.enabled": false,
   "editor.tabSize": 2,
   "editor.fontSize": 16,
@@ -26,5 +25,17 @@
   "breadcrumbs.enabled": true,
   "editor.formatOnPaste": true,
   "solargraph.commandPath": "/Users/vincentwaller/.gem/ruby/2.5.1/bin/solargraph",
-  "editor.formatOnSave": true
+  "editor.formatOnSave": true,
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "debug.node.autoAttach": "on",
+  "window.zoomLevel": 0,
+  "[html]": {},
+  "font-switcher.enableLivePreview": true,
+  "font-switcher.fontFamily": "'SF Mono Powerline', 'Inconsolata-g for Powerline', Menlo, Monaco, 'Courier New', monospace",
+  "editor.fontWeight": "500"
 }

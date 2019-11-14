@@ -1,0 +1,11 @@
+add_newline = true
+
+prompt_order = [
+    "directory",
+    "git_branch",
+    "git_state",
+    "git_status",
+    "ruby",
+    "line_break",
+    "line_break",
+]
