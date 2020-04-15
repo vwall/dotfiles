@@ -35,7 +35,12 @@
   "debug.node.autoAttach": "on",
   "window.zoomLevel": 0,
   "[html]": {},
-  "font-switcher.enableLivePreview": true,
   "font-switcher.fontFamily": "'SF Mono Powerline', 'Inconsolata-g for Powerline', Menlo, Monaco, 'Courier New', monospace",
-  "editor.fontWeight": "500"
+  "editor.fontWeight": "500",
+  "editor.fontFamily": "'SF Mono Powerline', 'Inconsolata-g for Powerline', Menlo, Monaco, 'Courier New', monospace",
+  "search.searchOnType": false,
+  "scss.showErrors": true,
+  "search.exclude": {
+    "**/sassdoc": true
+  }
 }

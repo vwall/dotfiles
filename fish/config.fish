@@ -11,11 +11,11 @@ for dircolors in {,g}dircolors
 end
 
 # Chruby
-source /usr/local/share/chruby/chruby.fish
-source /usr/local/share/chruby/auto.fish
+# source /usr/local/share/chruby/chruby.fish
+# source /usr/local/share/chruby/auto.fish
 
 #ASDF
-source ~/.asdf/asdf.fish
+# source ~/.asdf/asdf.fish
 
 starship init fish | source
 
