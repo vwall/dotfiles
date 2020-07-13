@@ -42,5 +42,14 @@
   "scss.showErrors": true,
   "search.exclude": {
     "**/sassdoc": true
-  }
+  },
+  "sass.andStared": [
+    "width",
+    "active",
+    "focus",
+    "hover",
+    "nth-child"
+  ],
+  "sass.disableAutoIndent": true,
+  "sass.format.enabled": false
 }

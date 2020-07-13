@@ -113,6 +113,10 @@
   autosetupmerge = true
 [push]
   default = tracking
+[pull]
+	rebase = true
+[rebase]
+	autoStash = true
 [apply]
   whitespace = nowarn
 [difftool "Kaleidoscope"]

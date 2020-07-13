@@ -15,7 +15,7 @@ end
 # source /usr/local/share/chruby/auto.fish
 
 #ASDF
-# source ~/.asdf/asdf.fish
+source (brew --prefix asdf)/asdf.fish
 
 starship init fish | source
 
