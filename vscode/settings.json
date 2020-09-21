@@ -51,5 +51,7 @@
     "nth-child"
   ],
   "sass.disableAutoIndent": true,
-  "sass.format.enabled": false
+  "sass.format.enabled": false,
+  "todo-tree.tree.showScanModeButton": false,
+  "vetur.format.defaultFormatter.html": "prettier"
 }

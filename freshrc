@@ -21,8 +21,8 @@ fresh starship/starship.toml --file=~/.config/starship.toml
 fresh bundler/config --file=~/.bundle/config
 
 ## ASDF
-# fresh asdf/asdfrc --file=~/.asdfrc
-# fresh asdf/tool-versions --file=~/.tool-versions
+fresh asdf/asdfrc --file=~/.asdfrc
+fresh asdf/tool-versions --file=~/.tool-versions
 # fresh asdf/default-npm-packages --file=~/.default-npm-packages
 
 ## VS Code editor
