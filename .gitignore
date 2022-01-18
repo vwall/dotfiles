@@ -1,0 +1,7 @@
+/configs/config/fish/completions/*
+/configs/config/fish/conf.d/*
+/configs/config/fish/functions/*
+!aliases.fish
+fish_variables
+!fisher.fish
+!goto.fish

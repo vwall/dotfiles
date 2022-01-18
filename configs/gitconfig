@@ -1,0 +1,37 @@
+[user]
+  name = Vincent Waller
+  email = vrwaller@gmail.com
+
+[core]
+  excludesfile = ~/.gitignore-global
+  editor = code --wait
+  ignorecase = false
+
+[color]
+  branch = auto
+  diff = auto
+  status = auto
+  ui = auto
+
+[alias]
+  age       = !echo "First commit:" && git log --reverse --pretty=format:'\t\t%ar' | head -n 1 && echo 'Last commit:' && git log --pretty=format:'\t\t%ar' | head -n 1
+  co        = checkout
+  lg        = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+  lme       = log --author='Vincent Waller'
+  timeline  = log --oneline --graph --decorate
+  who       = !git log --format='%aN%n%cN' | sort | uniq
+  who-email = !git log --format='%aN <%ae>%n%cN <%ce>' | sort | uniq
+
+[push]
+  default = tracking
+
+[pull]
+	rebase = true
+
+[rebase]
+	autoStash = true
+[filter "lfs"]
+	process = git-lfs filter-process
+	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
