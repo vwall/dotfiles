@@ -1,13 +1,16 @@
-function goto
-    argparse --stop-nonopt v/version h/help -- $argv
-    set action $argv[1]
+function goto --argument-names action place
+    echo $action
+    # echo $place
+    # echo the end
+
+    # set action $argv[1]
 
     if set -q _flag_version
         printf '%s\n' "goto, version 0.0.🤷‍♂️"
     else if set -q _flag_help
         _goto_help
     else if functions --query _goto_$action
-        _goto_$action $argv[2..-1]
+        _goto_$action $place
     else
         _goto_help
         return 1
@@ -36,11 +39,10 @@ function _goto_set_env
     kitty @ set-tab-title "$name"
 end
 
-function _goto_work
-    # Tab 1
-    set place $argv
-    to work
-    overmind s
+function _goto_work --argument-names place
+    # Main Tab
+    to $place
+    # overmind s
 
     # Tabs API + SPA
     kitty @ set-tab-title $place
@@ -48,11 +50,9 @@ function _goto_work
     set spa (_goto_launch_kitty $place spa)
     set api (_goto_launch_kitty $place api)
 
-    echo "spa $spa"
-    echo "api $api"
 
-    _goto_send_text $spa "to work:spa;code .;clear;"
-    _goto_send_text $api "to work:api;code .;clear;"
+    _goto_send_text $spa "to $place:spa;code .;clear;"
+    _goto_send_text $api "to $place:api;code .;clear;"
 
     clear
 end
