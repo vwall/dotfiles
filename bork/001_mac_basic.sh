@@ -5,7 +5,7 @@ ok cask font-jetbrains-mono
 
 ok brew direnv
 ok brew wget
-ok brew gpg
+ok cask postgres-unofficial
 ok brew overmind
 ok cask figma
 ok cask postico
