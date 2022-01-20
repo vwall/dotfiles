@@ -1,10 +1,4 @@
 function goto --argument-names action place
-    echo $action
-    # echo $place
-    # echo the end
-
-    # set action $argv[1]
-
     if set -q _flag_version
         printf '%s\n' "goto, version 0.0.🤷‍♂️"
     else if set -q _flag_help
@@ -40,25 +34,27 @@ function _goto_set_env
 end
 
 function _goto_work --argument-names place
-    # Main Tab
-    to $place
-    # overmind s
+    set regex "$place:?\w*"
+    set toDirs (to ls | string match -r $regex $1)
+    set dirs
 
-    # Tabs API + SPA
-    kitty @ set-tab-title $place
+    for d in $toDirs
+        set -p dirs $d
+    end
 
-    set spa (_goto_launch_kitty $place spa)
-    set api (_goto_launch_kitty $place api)
-
-
-    _goto_send_text $spa "to $place:spa;code .;clear;"
-    _goto_send_text $api "to $place:api;code .;clear;"
+    for dir in $dirs
+        if test -n $dir
+            set todir (_goto_launch_kitty $dir)
+            _goto_send_text $todir "to $dir;code .;clear;"
+        end
+    end
 
     clear
+    exit
 end
 
 function _goto_launch_kitty
-    kitty @ launch --type=tab --tab-title "$argv[1]-$argv[2]" --keep-focus
+    kitty @ launch --type=tab --tab-title $argv[1] --keep-focus
 end
 
 function _goto_send_text
