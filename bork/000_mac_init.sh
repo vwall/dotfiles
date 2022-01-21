@@ -24,8 +24,8 @@ ok brew git
 ok directory "$HOME/code"
 ok directory "$HOME/src"
 
-if [ -d "$HOME/.dotfiles/configs" ]; then
-  for config in $HOME/.dotfiles/configs/*; do
+if [ -d "$HOME/dotfiles/configs" ]; then
+  for config in $HOME/dotfiles/configs/*; do
     ok symlink "$HOME/.$(basename $config)" $config
   done
 fi

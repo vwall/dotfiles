@@ -3,6 +3,11 @@ ok brew-tap homebrew/cask
 ok brew-tap homebrew/cask-fonts
 ok cask font-jetbrains-mono
 
+#Fish Shell Stuff
+ok brew fd
+ok brew bat
+ok brew fzf
+
 ok brew direnv
 ok brew wget
 ok cask postgres-unofficial
