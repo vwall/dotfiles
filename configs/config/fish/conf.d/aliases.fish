@@ -12,3 +12,9 @@ abbr -a rdm 'rails db:migrate'
 abbr -a rt 'rails test'
 abbr -a rr 'rails routes'
 abbr -a rc 'rails console'
+
+# Overmind
+abbr -a oms 'overmind start'
+abbr -a omsd 'overmind start -D'
+abbr -a ome 'overmind echo'
+abbr -a omq 'overmind quit '
