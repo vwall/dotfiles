@@ -10,6 +10,7 @@ ok brew fzf
 
 ok brew direnv
 ok brew wget
+ok brew httpie
 ok cask postgres-unofficial
 ok brew overmind
 ok cask figma
